@@ -1,0 +1,93 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-main;
+  color: $color-dark;
+  font-size: 1.6rem;
+}
+
+a {
+color: $color-dark;
+transition: 0.2s ease-in;
+  &:hover{
+    color: $color-accent;
+  }
+}
+
+html, body {
+  height: 100vh;
+  background-color: $color-white;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 100px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $color-dark;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: $color-dark;
+}
+
+.bg-colored {
+  background: $color-neutral;
+}

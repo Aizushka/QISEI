@@ -1,0 +1,22 @@
+.partners {
+  margin: 40px 0;
+  &__content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .partner {
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: contain;
+    }
+  }
+}

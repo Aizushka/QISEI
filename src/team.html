@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("partials/head.html", {
+  "title": "CCNYxUCF QI"
+})
+<body>
+  <div class="wrapper">
+    @@include('partials/header.html', {})
+    <main class="main">
+
+      @@include('partials/page-title.html', {
+        "page-title": "Our team"
+      })
+
+      <div class="container">
+        <div class="teams ">
+
+          <h3 class="team__position">PRINCIPAL INVESTIGATOR</h3>
+          <section class="pi">
+            <div class="pi__member">
+              <div class="pi__image">
+                <img src="@img/pi_alexander_khanikaev.png" alt="">
+              </div>
+              <div class="pi__descr">
+                <h4 class="pi__text">Alexander Khanikaev</h4>
+                <h5 class="pi__text">Professor at The City College of New York and Graduate Center</h5>
+                <p class="pi__text">City University of New York</p>
+                <div class="member__socials">
+                  <div class="pi__social">
+                    <a href="https://scholar.google.com/citations?hl=en&user=if3RsywAAAAJ">
+                      <!-- <img src="@img/Google_Scholar_logo.svg" alt=""> -->
+                      <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4285f4" d="M256 411.12L0 202.667 256 0z"/><path fill="#356ac3" d="M256 411.12l256-208.453L256 0z"/><circle fill="#a0c3ff" cx="256" cy="362.667" r="149.333"/><path fill="#76a7fa" d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-khanikaev-5734622/">
+                      <!-- <img src="@img/linkedin.svg" alt=""> -->
+                      <svg class="social__icon" enable-background="new 0 0 112.196 112.196" viewBox="0 0 112.196 112.196" xmlns="http://www.w3.org/2000/svg"><circle cx="56.098" cy="56.097" fill="#007ab9" r="56.098"/><path d="m89.616 60.611v23.128h-13.409v-21.578c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77h13.405v-40.33h-13.405z" fill="#f1f2f2"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> <!-- .team__pies end-->
+        
+          <h3 class="team__position">POSTDOCTORAL RESEARCHERS</h3>
+          <section class="team">
+            
+            @@include('partials/member.html', {
+              "image": "@img/f.komissarenko.png",
+              "name": "Filipp Komissarenko",
+              "googleScholar": "https://scholar.google.com/citations?user=6Fb8qswAAAAJ&hl",
+              "linkedIn": "https://www.linkedin.com/in/filipp-komissarenko-8605149b/?originalSubdomain"
+            })
+
+            @@include('partials/member.html', {
+              "image": "@img/s.kirushechkina.png",
+              "name": "Svetlana Kiriushechkina",
+              "googleScholar": "https://scholar.google.com/citations?user=_BUEWlQAAAAJ&hl=en",
+              "linkedIn": "https://www.linkedin.com/in/skiriushechkina/"
+            })
+
+            @@include('partials/member.html', {
+              "image": "@img/a.vakulenko.png",
+              "name": "Anton Vakulenko",
+              "googleScholar": "https://scholar.google.com/citations?user=icmEz6UAAAAJ&hl=en",
+              "linkedIn": "https://www.linkedin.com/in/ajvakulenko/"
+            })
+
+          </section>
+
+          <h3 class="team__position">PHD STUDENTS</h3>
+          <section class="team">
+            @@include('partials/member.html', {
+              "image": "@img/y.kawaguchi.png",
+              "name": "Yuma Kawaguchi",
+              "googleScholar": "https://scholar.google.com/citations?user=GyF-IcQAAAAJ&hl=ja",
+              "linkedIn": "https://www.linkedin.com/in/yumakawaguchi-96/"
+            })
+
+            <div class="member">
+              <div class="member__image">
+                <img src="@img/f.sabatino.png" alt="">
+              </div>
+              <div class="member__descr">
+                <h6 class="member__name">Foster Sabatino</h6>
+                <div class="member__socials">
+                  <div class="member__social">
+                    <!-- Linked In -->
+                    <a href="https://www.linkedin.com/in/foster-sabatino/">
+                      <svg class="social__icon" enable-background="new 0 0 112.196 112.196" viewBox="0 0 112.196 112.196" xmlns="http://www.w3.org/2000/svg"><circle cx="56.098" cy="56.097" fill="#007ab9" r="56.098"/><path d="m89.616 60.611v23.128h-13.409v-21.578c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77h13.405v-40.33h-13.405z" fill="#f1f2f2"/></svg>
+                    </a>
+                  </div>
+                </div> <!-- .member__socials end -->
+              </div> <!-- member__descr end-->
+            </div> <!-- member end -->
+
+          </section>
+
+          <h3 class="team__position">UNDERGRADUATE STUDENTS</h3>
+          <section class="team">
+            <div class="member">
+              <div class="member__image">
+                <img src="@img/e.monique-hobuss.png" alt="">
+              </div>
+              <div class="member__descr">
+                <h6 class="member__name">Edda Monique Hobuss</h6>
+                <div class="member__socials">
+                  <div class="member__social">
+                    <!-- Linked In -->
+                    <a href="https://www.linkedin.com/in/edda-monique-hobuss-83431940/">
+                      <svg class="social__icon" enable-background="new 0 0 112.196 112.196" viewBox="0 0 112.196 112.196" xmlns="http://www.w3.org/2000/svg"><circle cx="56.098" cy="56.097" fill="#007ab9" r="56.098"/><path d="m89.616 60.611v23.128h-13.409v-21.578c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77h13.405v-40.33h-13.405z" fill="#f1f2f2"/></svg>
+                    </a>
+                  </div>
+                </div> <!-- .member__socials end -->
+              </div> <!-- member__descr end-->
+            </div> <!-- member end -->
+
+          </section>
+
+        </div> <!-- .team end -->
+      </div> <!-- .container end -->
+    </main>
+    @@include('partials/footer.html', {})
+  </div>
+</body>
+</html>

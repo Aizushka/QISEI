@@ -1,0 +1,22 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/base';
+@import './base/base__media';
+
+@import '../../node_modules/swiper/swiper-bundle';
+
+
+@import './blocks/header';
+@import './blocks/divider';
+@import './blocks/header_media';
+@import './blocks/hero';
+@import './blocks/latest-news';
+@import './blocks/swiper';
+@import './blocks/partners';
+@import './blocks/_page-title';;
+@import './blocks/about';
+@import './blocks/news';
+@import './blocks/footer';
+
+@import './blocks/team';
+@import './blocks/facilities';

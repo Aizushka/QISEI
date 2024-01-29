@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: $color-main;
+  }
+
+  &__body {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 3;
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &>picture {
+      height: 100%;
+    }
+    .logo__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      .cls-1, .cls-2 {
+        fill: $color-white;
+      }
+      .cls-2 {
+        stroke: $color-white;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+      .cls-3 {
+        fill: $color-accent;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    position: relative;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+
+    .burger_strip {
+      width: 20px;
+      height: 2px;
+      background-color: $color-neutral;
+      transition: 0.3s linear;
+    }
+    .burger_strip_1 {
+      position: absolute;
+      left: calc(50% - 10px);
+      top: 11px;
+    }
+    .burger_strip_2 {
+      margin: 19px auto;
+
+    }
+    .burger_strip_3 {
+      position: absolute;
+      left: calc(50% - 10px);
+      top: 27px;
+    }
+
+    &_active {
+      .burger_strip_1 {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .burger_strip_2 {
+        width: 0;
+      }
+      .burger_strip_3 {
+      transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__menu {
+    position: relative; 
+    z-index: 2;
+    transition: 0.3s linear;
+  }
+
+  &__list {
+    flex-shrink: 1;
+    display: flex;
+    // gap: 35px;
+    gap: clamp(10px, 2vw ,35px);
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-wrap: nowrap;
+  }
+
+  &__link {
+    text-align: center;
+    white-space: nowrap;
+    font-size: clamp( 16px, 2vw, 18px);
+    text-transform: uppercase;
+    color: $color-neutral;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

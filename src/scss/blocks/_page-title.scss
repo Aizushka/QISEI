@@ -1,0 +1,8 @@
+.page__title {
+  padding: 30px 0;
+  background-color: $color-neutral;
+  & > .container {
+    display: flex;
+    align-items: center;
+  }
+}

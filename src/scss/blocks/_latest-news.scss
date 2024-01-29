@@ -1,0 +1,21 @@
+.l-news {
+  padding: 40px 0;
+
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__item {
+    min-width: 250px;
+    width: 27%;
+    padding: 25px;
+    background-color: $color-neutral;
+  }
+}
