@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Reset and base styles  */
 
 * {
@@ -1623,6 +1625,64 @@ button.swiper-pagination-bullet {
 
 .publication__authors {
   font-size: 14px;
+}
+
+.facilities-list {
+  padding: 15px 0;
+}
+
+.facilities-list .list-item {
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+}
+
+.facilities-list .item-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 0;
+  height: 0;
+}
+
+.facilities-list .item-title {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 25px;
+}
+
+.facilities-list .item-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: 10px solid transparent;
+  border-top: 10px solid #333333;
+  border-bottom: none;
+}
+
+.facilities-list .item-input:checked ~ .item-title::after {
+  border-top: none;
+  border-bottom: 10px solid #333333;
+}
+
+.facilities-list .item-input:checked ~ .item-text {
+  display: flex;
+}
+
+.facilities-list .item-text {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.facilities-list .item-text > li {
+  list-style: "♦ " inside;
 }
 
 @media (max-width: 767px) {
