@@ -1,8 +1,7 @@
 
 import Swiper from 'swiper/bundle';
 
-// init Swiper:
-export const swiper = new Swiper('.swiper', {
+export const swiperMain = new Swiper('.swiper-main', {
   // Optional parameters
   loop: true,
   speed: 1000,

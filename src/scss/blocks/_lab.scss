@@ -1,0 +1,14 @@
+.lab {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__name {
+    padding: 1em;
+    background-color: $color-neutral;
+    text-align: center;
+    line-height: 1.4;
+  }
+}

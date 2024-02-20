@@ -15,32 +15,107 @@
       <div class="container">
         <div class="teams ">
 
-          <h3 class="team__position">PRINCIPAL INVESTIGATOR</h3>
+          <h3 class="team__position">PRINCIPAL INVESTIGATORS</h3>
           <section class="pi">
-            <div class="pi__member">
-              <div class="pi__image">
-                <img src="@img/pi_alexander_khanikaev.png" alt="">
-              </div>
-              <div class="pi__descr">
-                <h4 class="pi__text">Alexander Khanikaev</h4>
-                <h5 class="pi__text">Professor at The City College of New York and Graduate Center</h5>
-                <p class="pi__text">City University of New York</p>
-                <div class="member__socials">
-                  <div class="pi__social">
-                    <a href="https://scholar.google.com/citations?hl=en&user=if3RsywAAAAJ">
-                      <!-- <img src="@img/Google_Scholar_logo.svg" alt=""> -->
-                      <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4285f4" d="M256 411.12L0 202.667 256 0z"/><path fill="#356ac3" d="M256 411.12l256-208.453L256 0z"/><circle fill="#a0c3ff" cx="256" cy="362.667" r="149.333"/><path fill="#76a7fa" d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alexander-khanikaev-5734622/">
-                      <!-- <img src="@img/linkedin.svg" alt=""> -->
-                      <svg class="social__icon" enable-background="new 0 0 112.196 112.196" viewBox="0 0 112.196 112.196" xmlns="http://www.w3.org/2000/svg"><circle cx="56.098" cy="56.097" fill="#007ab9" r="56.098"/><path d="m89.616 60.611v23.128h-13.409v-21.578c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77h13.405v-40.33h-13.405z" fill="#f1f2f2"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            @@include('partials/pi-member.html', {
+              "image": "@img/pi_alexander_khanikaev.png",
+              "name": "Alexander Khanikaev",
+              "position": "Lead PI",
+              "job": "Professor",
+              "univercity": "City University of New York",
+              "lab-id": "khanikaev-lab",
+              "googleScholar": "https://scholar.google.com/citations?hl=en&user=if3RsywAAAAJ",
+              "linkedIn": "https://www.linkedin.com/in/alexander-khanikaev-5734622/",
+            })
+            
+            @@include('partials/pi-member.html', {
+              "image": "@img/vinod-menon.png",
+              "name": "Vinod Menon",
+              "position": "",
+              "job": "Professor",
+              "univercity": "City University of New York",
+              "lab-id": "menon-lab",
+              "googleScholar": "https://scholar.google.com/citations?user=6u6Aa2QAAAAJ&hl=en",
+              "linkedIn": "https://www.linkedin.com/in/vinod-menon-4329351",
+            })
+
+            @@include('partials/pi-member.html', {
+              "image": "@img/carlos-meriles.png",
+              "name": "Carlos Meriles",
+              "position": "",
+              "job": "Professor",
+              "univercity": "City University of New York",
+              "lab-id": "meriles-lab",
+              "googleScholar": "https://scholar.google.com/citations?user=hHU3bEkAAAAJ&hl=en",
+              "linkedIn": "https://www.linkedin.com/in/carlos-meriles-479201123",
+            })
+
+            @@include('partials/pi-member.html', {
+              "image": "@img/roger-dorsinville.png",
+              "name": "Roger Dorsinville",
+              "position": "",
+              "job": "Department Chair, Professor",
+              "univercity": "City University of New York",
+              "lab-id": "dorsinville-lab",
+              "googleScholar": "https://scholar.google.com/citations?user=fAhr_GwAAAAJ&hl=en",
+              "linkedIn": "https://www.linkedin.com/in/roger-dorsinville-8a412a12",
+            })
+
+            @@include('partials/pi-member.html', {
+              "image": "@img/andrea-blanco-redondo.png",
+              "name": "Andrea Blanco-Redondo",
+              "position": "",
+              "job": "Professor",
+              "univercity": "University of Central FLorida",
+              "lab-id": "redondo-lab",
+              "googleScholar": "https://scholar.google.es/citations?user=3zRBRaEAAAAJ&hl=es",
+              "linkedIn": "https://www.linkedin.com/in/andrea-blanco-redondo-7836108",
+            })
           </section> <!-- .team__pies end-->
-        
+
+          <h3 class="team__position">ASSOCIATE MEMBERS</h3>
+          <section class="team">
+
+          @@include('partials/associate-member.html', {
+            "image": "@img/ponyan-ghaemi.png",
+            "name": "Pouyan Ghaemi",
+            "job": "Associate Professor",
+            "univercity": "City University of New York",
+            "googleScholar": "https://scholar.google.com/citations?user=IYvQn6sAAAAJ&hl=en",
+            "linkedIn": "https://www.linkedin.com/in/pouyan-ghaemi-71954666?challengeId=AQH4Xtj7HBagRgAAAY2QetB5mkbg5VaFdfpobm9jKb-llGC5yEkSj1bjpP170bfJMA4GGuJ4q6I7WGjzTu3gBgd0EwonldrNyA&submissionId=51fd2de6-d559-b217-3ef3-a4ac537fc92b&challengeSource=AgH4pKNzv_kbXAAAAY2QeyPAsGFyHYzo2GrnMvbeIH4sPlTYYiqs1d-QgfqIS1A&challegeType=AgHT1PnqzXXLxQAAAY2QeyPD4U1u8HvDa3kUCNrr9cOGhZ3kevbkv0s&memberId=AgFBphDMGf3BIQAAAY2QeyPHDpU1-FCA8EHjp70x6PXQPRM&recognizeDevice=AgEn2D_xp5ZhGAAAAY2QeyPK7gmG3S9_iL__zLsqQNn0NCPJsXlK8",
+          })
+
+          @@include('partials/associate-member.html', {
+            "image": "@img/samah-saeed.png",
+            "name": "Samah Saeed",
+            "job": "Associate Professor",
+            "univercity": "City University of New York",
+            "googleScholar": "https://scholar.google.com/citations?user=_BUEWlQAAAAJ&hl=en",
+            "linkedIn": "https://www.linkedin.com/in/skiriushechkina/"
+          })
+
+          <div class="member">
+            <div class="member__image">
+              <img src="@img/johannes-flick.png" alt="">
+            </div>
+            <div class="member__descr">
+              <h4 class="member__name">Johannes Flick</h4>
+              <h5 class="member__text">Associate Professor</h5>
+              <p class="member__text">City University of New York</p>
+              <div class="member__socials">
+                <div class="pi__social">
+                  <!-- Google Scholar -->
+                  <a href="https://scholar.google.com/citations?user=nyp2T-oAAAAJ&hl=en">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4285f4" d="M256 411.12L0 202.667 256 0z"/><path fill="#356ac3" d="M256 411.12l256-208.453L256 0z"/><circle fill="#a0c3ff" cx="256" cy="362.667" r="149.333"/><path fill="#76a7fa" d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"/></svg>
+                  </a>
+                </div>
+              </div> <!-- .member__socials end -->
+            </div> <!-- member__descr end-->
+          </div> <!-- member end -->
+
+          </section> <!-- associate end-->
+
           <h3 class="team__position">POSTDOCTORAL RESEARCHERS</h3>
           <section class="team">
             

@@ -1,5 +1,27 @@
 .footer {
-  height: 50px;
+  padding: 20px;
   background-color: $color-main;
   color: $color-neutral;
+
+  &-content {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text {
+      font-size: 18px;
+    }
+    .logo {
+      margin-top: 5px;
+      height: 75px;
+      &-letters {
+        fill: $color-white;
+      }
+      svg {
+        height: 100%;
+      }
+    }
+
+  }
+
 }
