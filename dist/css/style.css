@@ -1241,7 +1241,7 @@ button.swiper-pagination-bullet {
   min-height: 30vh;
   position: relative;
   z-index: 1;
-  border: 1px solid #ffd600;
+  border: 1px solid transparent;
 }
 
 .hero__bg {
@@ -1820,9 +1820,9 @@ button.swiper-pagination-bullet {
   color: #f2f2f2;
 }
 
-.swiper-main-pagination,
-.swiper-main-button-prev,
-.swiper-main-button-next {
+.swiper-main .swiper-pagination,
+.swiper-main .swiper-button-prev,
+.swiper-main .swiper-button-next {
   color: #f2f2f2;
 }
 
@@ -1840,6 +1840,9 @@ button.swiper-pagination-bullet {
   opacity: 0.4;
   cursor: default;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .labs-tabs .lab-tab h4 {
@@ -1942,11 +1945,19 @@ button.swiper-pagination-bullet {
   background: rgba(225, 225, 225, 0.8);
 }
 
-@media (max-width: 767px) {
-  .main {
-    margin-top: 50px;
+@media (max-width: 950px) {
+  .labs-tabs {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
   }
 
+  .labs-tabs .lab-tab {
+    margin: 0;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 930px) {
   .divider {
     margin-top: 50px;
     margin-bottom: -50px;
@@ -1985,5 +1996,63 @@ button.swiper-pagination-bullet {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .swiper-main .slide__content {
+    gap: 10px;
+  }
+
+  .swiper-main .slide__content .slide__part {
+    padding: 30px;
+  }
+
+  .swiper-main .slide__content .slide__descr {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .news__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .publication__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .swiper-main .slide__content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .swiper-main .slide__content .slide__part {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .swiper-main .slide__content .slide__name {
+    align-items: center;
+  }
+
+  .swiper-main .slide__content .slide__name .slide__title {
+    margin-bottom: 15px;
   }
 }

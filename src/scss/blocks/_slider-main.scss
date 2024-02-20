@@ -47,10 +47,45 @@
     }
   }
 
-  &-pagination,
-  &-button-prev,
-  &-button-next {
+  .swiper-pagination,
+  .swiper-button-prev,
+  .swiper-button-next {
     color: $color-neutral;
   }
+}
 
+@media (max-width: 930px) {
+  .swiper-main {
+    .slide__content {
+      gap: 10px;
+      .slide__part{
+        padding: 30px;
+      }
+      .slide__descr {
+        width: 70%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .swiper-main {
+    .slide__content {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      .slide__part{
+        padding: 20px 0;
+        text-align: center;
+      }
+      .slide__name {
+        align-items: center;
+        .slide__title {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
 }

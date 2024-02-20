@@ -19,7 +19,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       gap: 25px;
-  }
+    }
 
 
   &__img {
@@ -54,5 +54,16 @@
   }
   &__btn {
     margin: 30px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .news {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
   }
 }

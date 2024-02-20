@@ -4,7 +4,7 @@
   // height: 60vh;
   position: relative;
   z-index: 1;
-  border: 1px solid $color-accent;
+  border: 1px solid transparent;
 
   &__bg {
     position: absolute;
@@ -28,5 +28,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     gap: 30px;
+  }
+}
+
+@media (max-width: 930px) {
+  .hero {
+    &__content {
+      width: 100%;
+    }
   }
 }

@@ -11,6 +11,9 @@
     opacity: 0.4;
     cursor: default;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h4 {
       font-size: 18px;
@@ -112,6 +115,17 @@
       font-size: 1.2em;
       line-height: 1.4em;
       background: rgba(225, 225, 225, 0.8);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .labs-tabs {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    .lab-tab {
+      margin: 0;
+      flex-grow: 1;
     }
   }
 }

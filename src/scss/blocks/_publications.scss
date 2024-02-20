@@ -30,3 +30,14 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 650px) {
+  .publication {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+}
